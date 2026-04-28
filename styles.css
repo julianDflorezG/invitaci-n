@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box; /* Evita que el padding desconfigure el tamaño */
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --fondo: #FFDAB9; 
+  --color-primario: #FF8C00;
+  --color-secundario: #FFF5EE;
+  --texto: #4A2C2A;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  color: var(--texto);
+  background-color: var(--fondo); /* Color base por si algo falla */
+  overflow-x: hidden;
+}
+
+#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Los globos ahora están en nivel 1 */
+  background: linear-gradient(180deg, #FFDAB9 0%, #FFCCAC 100%);
+}
+
+.contenedor {
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 400px;
+  width: 90%;
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  
+  /* Esto centra TODO lo de adentro */
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+  
+  position: relative;
+  z-index: 10; /* La invitación está muy por encima de los globos */
+}
+
+h1 { 
+  font-family: 'Pacifico', cursive; 
+  color: var(--color-primario); 
+  font-size: 2.2rem; 
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+video {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.info-contacto { 
+  margin-bottom: 20px; 
+  width: 100%;
+}
+
+.info-contacto p {
+  margin: 5px 0; /* Controla el espacio entre líneas de texto */
+  font-size: 1.1rem;
+}
+
+.icono-instagram {
+  font-size: 45px;
+  color: #E1306C;
+  text-decoration: none;
+  transition: transform 0.3s;
+  margin: 10px 0;
+}
+
+.icono-instagram:hover { transform: scale(1.1); }
+
+.botones { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 12px; 
+  width: 100%; /* Los botones ocupan el ancho disponible */
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.btn-si { background-color: #9ef01a; color: #132a13; }
+.btn-no { background-color: #ff595e; color: white; }
+.btn-duda { background-color: #ffca3a; color: #533e00; }
+
+button:active { transform: scale(0.96); }

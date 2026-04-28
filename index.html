@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Cumpleaños - Samantha</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="tsparticles"></div>
+
+    <div class="contenedor">
+        <h1>CUMPLEAÑOS SAMANTHA</h1>
+        
+        <video id="videoInvitacion" controls playsinline poster="imagen-previa.jpg">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
+        </video>
+
+        <div class="info-contacto">
+            <p><strong>Cumpleaños de:</strong> Samantha Florez Victoria</p>
+            <p><i class="fa-solid fa-phone"></i> Cel: 3204031480</p>
+            <a href="https://instagram.com/saflovi" target="_blank" class="icono-instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+
+        <div class="info-contacto">
+            <p><strong>Ubicación:</strong> [Escribe aquí la dirección]</p>
+            <p><strong>Fecha:</strong> [Escribe la fecha]</p>
+            <p><strong>Email de contacto:</strong> [Tu Correo]</p>
+        </div> <div class="botones">
+            <button class="btn-si" onclick="responder('confirmado')">¡Claro que voy!</button>
+            <button class="btn-no" onclick="responder('no_puedo')">No puedo ir</button>
+            <button class="btn-duda" onclick="responder('duda')">Aún no lo sé</button>
+        </div>
+    </div> <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
