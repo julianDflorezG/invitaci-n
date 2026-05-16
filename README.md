@@ -128,11 +128,6 @@ window.open(`https://wa.me/57TUNUMERO?text=...`)
 # 5. Personalizar textos en index.html y publicar con GitHub Pages
 ```
 
----
-
-## 📸 Vista previa
-
-> Proyecto desplegado y en producción — [Ver demo en vivo](https://juliandflorzg.github.io/invitacion-web/)
 
 ---
 
